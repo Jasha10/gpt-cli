@@ -202,5 +202,6 @@ class CLIUserInputProvider(UserInputProvider):
         return self.prompt(multiline=True)
 
     def _parse_input(self, input: str) -> Tuple[str, Dict[str, Any]]:
-        input, args = parse_args(input)
+        # input, args = parse_args(input)
+        args = {}
         return input, args
